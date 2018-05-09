@@ -22,7 +22,7 @@ int Stack::Pop()
 		--size;
 		int returnval = pCurrent->data; //return what it is in the data of our current node
 		pTemp = pHead; //set our temp pointer back to the start of the list
-		for (int i = 0; i < size; i++) //loop through the size of the list
+		for (int i = 0; i < Size(); i++) //loop through the size of the list
 		{
 			if (pTemp->pNext != pCurrent) //each iteration we check if the next node to the one ptemp is in, is equal to the node of pCurrent
 			{
